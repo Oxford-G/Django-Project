@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Game On</title>
+  </head>
+  <body>
+    <ul>
+      {{obj.outer.inner}}
+      {% for u in fruits %}
+      <li>{{ u }}</li>
+      {% endfor %}
+    </ul>
+    {% if nuts %}
+      <p>Number of nuts: {{nuts|length}}</p>
+    {% else %}
+      <p>Nonuts</p>
+    {% endif %}
+  </body>
+</html>
